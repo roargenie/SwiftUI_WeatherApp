@@ -8,18 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		F62C8A0B29DFFDD40052D622 /* SwiftUI_WeatherAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62C8A0A29DFFDD40052D622 /* SwiftUI_WeatherAppApp.swift */; };
-		F62C8A0D29DFFDD40052D622 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62C8A0C29DFFDD40052D622 /* ContentView.swift */; };
 		F62C8A0F29DFFDD50052D622 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F62C8A0E29DFFDD50052D622 /* Assets.xcassets */; };
 		F62C8A1329DFFDD50052D622 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F62C8A1229DFFDD50052D622 /* Preview Assets.xcassets */; };
+		F62C8A1E29DFFEB60052D622 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62C8A1D29DFFEB60052D622 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F62C8A0729DFFDD40052D622 /* SwiftUI_WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F62C8A0A29DFFDD40052D622 /* SwiftUI_WeatherAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_WeatherAppApp.swift; sourceTree = "<group>"; };
-		F62C8A0C29DFFDD40052D622 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F62C8A0E29DFFDD50052D622 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F62C8A1029DFFDD50052D622 /* SwiftUI_WeatherApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftUI_WeatherApp.entitlements; sourceTree = "<group>"; };
 		F62C8A1229DFFDD50052D622 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F62C8A1D29DFFEB60052D622 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +52,11 @@
 		F62C8A0929DFFDD40052D622 /* SwiftUI_WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				F62C8A1B29DFFE880052D622 /* View */,
+				F62C8A1A29DFFE850052D622 /* Extension */,
+				F62C8A1C29DFFE9E0052D622 /* Service */,
+				F62C8A1929DFFE830052D622 /* Model */,
 				F62C8A0A29DFFDD40052D622 /* SwiftUI_WeatherAppApp.swift */,
-				F62C8A0C29DFFDD40052D622 /* ContentView.swift */,
 				F62C8A0E29DFFDD50052D622 /* Assets.xcassets */,
 				F62C8A1029DFFDD50052D622 /* SwiftUI_WeatherApp.entitlements */,
 				F62C8A1129DFFDD50052D622 /* Preview Content */,
@@ -67,6 +70,35 @@
 				F62C8A1229DFFDD50052D622 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F62C8A1929DFFE830052D622 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F62C8A1A29DFFE850052D622 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		F62C8A1B29DFFE880052D622 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F62C8A1D29DFFEB60052D622 /* MainView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F62C8A1C29DFFE9E0052D622 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +171,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F62C8A0D29DFFDD40052D622 /* ContentView.swift in Sources */,
 				F62C8A0B29DFFDD40052D622 /* SwiftUI_WeatherAppApp.swift in Sources */,
+				F62C8A1E29DFFEB60052D622 /* MainView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,7 +311,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
@@ -317,7 +349,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
