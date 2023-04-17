@@ -29,6 +29,7 @@
 		F6016DE629E51D190039DFF1 /* ForecastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastView.swift; sourceTree = "<group>"; };
 		F61F6CE729EBFBDB001253D9 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 		F61F6CE929EBFD2A001253D9 /* WeatherService+Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WeatherService+Location.swift"; sourceTree = "<group>"; };
+		F61F6CEB29ED5341001253D9 /* GangnamStation.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = GangnamStation.gpx; sourceTree = "<group>"; };
 		F62C8A0729DFFDD40052D622 /* SwiftUI_WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F62C8A0A29DFFDD40052D622 /* SwiftUI_WeatherAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_WeatherAppApp.swift; sourceTree = "<group>"; };
 		F62C8A0E29DFFDD50052D622 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -76,6 +77,7 @@
 				F62C8A1929DFFE830052D622 /* Model */,
 				F62C8A0A29DFFDD40052D622 /* SwiftUI_WeatherAppApp.swift */,
 				F62C8A0E29DFFDD50052D622 /* Assets.xcassets */,
+				F61F6CEB29ED5341001253D9 /* GangnamStation.gpx */,
 				F62C8A1029DFFDD50052D622 /* SwiftUI_WeatherApp.entitlements */,
 				F62C8A1129DFFDD50052D622 /* Preview Content */,
 			);
@@ -337,6 +339,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "현재 위치에서 날씨 정보를 요청합니다.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -375,6 +378,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "현재 위치에서 날씨 정보를 요청합니다.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
